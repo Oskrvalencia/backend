@@ -1,0 +1,12 @@
+version: '1.0';
+
+services:
+  backend:
+    image: 'ovalencia08/backend-crm:latest'
+    build: '.'
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./public:/app/public
+    env_file:
+      - env.env
