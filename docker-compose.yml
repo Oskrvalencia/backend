@@ -1,0 +1,8 @@
+version: '1.0'
+services:
+  image: 'ovalencia08/front-crm:latest'
+  build: '.'
+  ports: 
+    - '4200:4200'
+  env_file:
+    - env.env
